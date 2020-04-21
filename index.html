@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API películas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" async></script>
+</head>
+<body onload="clean()">
+    <header>
+        <div class="titulo" onclick="clean()"><h2>API películas</h2></div>
+        <span onclick="getPopularMovies()">Películas populares</span>
+        <span onclick="getLastestMovies()">Últimas películas</span>
+    </header>
+    <div class="bienvenida">
+        <div class="tituloBienvenida">
+            <p><strong>Bienvenidos!!</strong></p>
+        </div>
+        <div class="cuerpoBienvenida">
+            <p><strong>En esta web podrás consultar información sobre cientos de películas</strong></p>
+        </div>
+        <form action=""></form>
+        <div class="buscar">
+            <input type="text" id="buscar" name="buscar" placeholder="Nombre de la película que estás buscando"></input>
+            <button type="reset" class="botonBuscar" onclick="findMovie()">Buscar</button>
+        </div>
+    </div>
+    <main class="movies">
+    </main>
+
+    <footer>
+        <div>Copyright © 2020 Álvaro Giménez - Design: Álvaro Giménez</div>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+</body>
+</html>
